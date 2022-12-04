@@ -1,5 +1,4 @@
-{
-  "homepage": "http://NirmalNaveen20.github.io/livecare-hospitals",  
+{ 
   "name": "admin",
   "proxy": "http://localhost:5000/",
   "secure": false,
@@ -34,8 +33,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "deploy": "gh-pages -d build",
-    "predeploy": "npm run build",   
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
