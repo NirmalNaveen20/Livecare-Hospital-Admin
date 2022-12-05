@@ -4,6 +4,8 @@ import mongoose from "mongoose";
 const accountsSchema = new mongoose.Schema({
 
     invoiceNo: {type: String, required: true, unique: true}, //only one invoice
+    driver: {type: String},
+    phone: {type: String},
     clients: {type: String, required: true},
     type: {type: String, required: true},
     status: {type: Boolean, required: true, default: false},

@@ -144,19 +144,19 @@ const data = {
     ],
     holidays: [
         {
+            day: "Wednesday",
+            date: "12.07.2022",
+            holiday: "Unduwap Full Moon Poya Day"
+        }, 
+        {
+            day: "Sunday",
+            date: "12.24.2022",
+            holiday: "Christmas Day"
+        }, 
+        {
             day: "Sunday",
             date: "01.01.2023",
             holiday: "New Year"
-        }, 
-        {
-            day: "Saturday",
-            date: "07.01.2023",
-            holiday: "Christmas"
-        }, 
-        {
-            day: "Wednesday",
-            date: "15.02.2023",
-            holiday: "National Day"
         }, 
         {
             day: "Friday",
@@ -186,17 +186,47 @@ const data = {
     ],
     accounts: [
         {
-            invoiceNo: "ricpe-3242",
-            clients: "Google",
-            type: "VISA",
-            amount: "Rs 4500"
+            invoiceNo: "PG-8448",
+            driver: "Hasitha Perera",
+            phone: "0714556598",
+            clients: "Kurunagala",
+            type: "Emergency",
+            amount: "Rs 650000"
         },
         {
-            invoiceNo: "ricpe-55844",
-            clients: "BT Technology",
-            type: "PayPal",
+            invoiceNo: "PC-5565",
+            driver: "Kumara Siriwardana",
+            phone: "0716557898",
+            clients: "Negombo",
+            type: "Emergency",
+            amount: "Rs 55000"
+        },
+        {
+            invoiceNo: "PC-6598",
+            driver: "Chamara Liyanage",
+            phone: "0714558532",
+            clients: "Malabe",
+            type: "Disaster",
             status: true,
-            amount: "Rs 150000"
+            amount: "Rs 45000"
+        },
+        {
+            invoiceNo: "LG-5578",
+            driver: "Eric Silva",
+            phone: "0716598754",
+            clients: "Malabe",
+            type: "Normal",
+            status: true,
+            amount: "Rs 75000"
+        },
+        {
+            invoiceNo: "PG-5458",
+            driver: "Chathuranga Perera",
+            phone: "0778495655",
+            clients: "Galle",
+            type: "Disaster",
+            status: true,
+            amount: "Rs 89000"
         },
     ],
     events: [
@@ -230,22 +260,60 @@ const data = {
     ],
     projects: [
         {
-            clientName: "Gabby George",
-            project: "Admin Panel",
-            projectCost: 800,
-            payment: "Done",
+            clientName: "Kamal Perera",
+            project: "CT Scanning",
+            address: "Matara",
+            gender: "Male",
+            phone: "+94714552595",
+            method: "VISA",
+            projectCost: 15000,
+            payment: "Approved",
             status: "Delivered"
         },
         {
-            clientName: "Aiden Lloyd",
-            project: "One Page For Portfolio",
-            projectCost: 500,
+            clientName: "Janani Anuthara",
+            project: "Diabetes Screening",
+            address: "Malabe",
+            gender: "Female",
+            phone: "+94714565478",
+            method: "CASH",
+            projectCost: 6500,
+            payment: "Pending",
+            status: "Delivered"
         },
         {
-            clientName: "Jaden Collins",
-            project: "WebSite for Caffee",
-            projectCost: 900,
-        }
+            clientName: "Sunil Perera",
+            project: "Echo Cardiography",
+            address: "Ragama",
+            gender: "Male",
+            phone: "+94713245595",
+            method: "Master Card",
+            projectCost: 95000,
+            payment: "Approved",
+            status: "Delivered"
+        },
+        {
+            clientName: "Gayashan Silva",
+            project: "Emergency Treatment Unit (ETU)",
+            address: "Ratnapura",
+            gender: "Male",
+            phone: "+94714512345",
+            method: "VISA",
+            projectCost: 8500,
+            payment: "Pending",
+            status: "Delivered"
+        },
+        {
+            clientName: "Saduni Perera",
+            project: "Exercise ECG",
+            address: "Kollopitiya",
+            gender: "Male",
+            phone: "+94714552595",
+            method: "Cash",
+            projectCost: 12000,
+            payment: "Pending",
+            status: "Delivered"
+        }       
     ],
     salaryChart: [
         {

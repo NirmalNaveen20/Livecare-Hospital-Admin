@@ -49,12 +49,14 @@ const Accounts = () => {
   const [filterBtn, setFilterBtn] = useState(true);
 
   const columns = [
-      { name: "INVOICE NO.", options: { filterOptions: { fullWidth: true } } },
-      "CLIENTS",
-      "DATE",
+      { name: "VEHICLE NUMBER", options: { filterOptions: { fullWidth: true } } },
+      "DRIVER",
+      "CONTACT NUMBER",
+      "BRANCH",
+      "JOINED DATE",
       "TYPE",
       "STATUS",
-      "AMOUNT"
+      "SALARY"
   ];
 
   const options = {
@@ -84,22 +86,22 @@ const Accounts = () => {
     <div className='u-container'>
       <div className="u-row accounts">
         <div className="u-badge">
-          <span className='u-total'>Total Accounts</span>
+          <span className='u-total'>Total Ambulances</span>
           <h1 className="u-totalNumber">{accountsNumber?.count}</h1>
         </div>
       </div>
       <div className="u-row">
         {
           accounts.length === 0 ? (
-            <h3 className='no-data'>There are currently no accounts!</h3>
+            <h3 className='no-data'>Details of Ambulances are loading please wait!</h3>
           ) : (
             <CacheProvider value={muiCache}>
               <ThemeProvider theme={createTheme()}>
                   <MUIDataTable
-                  title={"ACCOUNTS LIST"}
+                  title={"AMBULANCE VEHICLE DETAILS"}
                   data={
                     accounts.map((account) => (
-                      [account.invoiceNo, account.clients, account.createdAt?.slice(0, 10), account.type, account.status === true ? ('Approved') : ('PENDING'), account.amount]
+                      [account.invoiceNo,account.driver,account.phone, account.clients, account.createdAt?.slice(0, 10), account.type, account.status === true ? ('Available') : ('Not Available'), account.amount]
                     ))
                   }
                   columns={columns}

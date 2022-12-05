@@ -57,30 +57,37 @@ const AddUser = ({setOpen}) => {
           <div className="card-quick">
             <div className="card-flex">
                 <div className="card-row">
-                    <input type="text" onChange={(e) => setUserId(e.target.value)} required placeholder='User ID' />
+                    <label htmlFor="">User ID</label>
+                    <input type="text" onChange={(e) => setUserId(e.target.value)} required placeholder='Enter User Id' />
                 </div>
             </div>
             <div className="card-flex">
                 <div className="card-row">
-                    <input type="text" onChange={(e) => setFirstName(e.target.value)} required placeholder='First Name' />
+                <label htmlFor="">First Name</label>
+                    <input type="text" onChange={(e) => setFirstName(e.target.value)} required placeholder='Enter first Name' />
                 </div>
                 <div className="card-row">
-                    <input type="text" onChange={(e) => setLastName(e.target.value)} required placeholder='Last Name' />
-                </div>
-            </div>
-            <div className="card-flex">
-                <div className="card-row">
-                    <input type="text" onChange={(e) => setEmail(e.target.value)} required placeholder='E-mail' />
-                </div>
-                <div className="card-row">
-                    <input type="text" onChange={(e) => setMobile(e.target.value)} required placeholder='Mobile' />
+                <label htmlFor="">Last Name</label>
+                    <input type="text" onChange={(e) => setLastName(e.target.value)} required placeholder='Enter last name' />
                 </div>
             </div>
             <div className="card-flex">
                 <div className="card-row">
-                    <input type="text" onChange={(e) => setRole(e.target.value)} required placeholder='Role' />
+                    <p>Email</p>
+                    <input type="text" onChange={(e) => setEmail(e.target.value)} required placeholder='example@role.livecare.lk' />
                 </div>
                 <div className="card-row">
+                <label htmlFor="">Contact Number</label>
+                    <input type="text" onChange={(e) => setMobile(e.target.value)} required placeholder='Enter contact number' />
+                </div>
+            </div>
+            <div className="card-flex">
+                <div className="card-row">
+                <label htmlFor="">User Name</label>
+                    <input type="text" onChange={(e) => setRole(e.target.value)} required placeholder='Enter user name' />
+                </div>
+                <div className="card-row">
+                <label htmlFor="">User Roles</label>
                     <select name="" id="" onChange={(e) => setRoleType(e.target.value)}>
                         <option value="Doctor">Doctor</option>
                         <option value="Patient">Patient</option>

@@ -44,29 +44,30 @@ const AddDepartment = ({setOpen}) => {
             <div className="card-flex">
                 <div className="card-row">
                     <label>Centre Name</label>
-                    <input type="text" required onChange={(e) => setDepartmentName(e.target.value)} placeholder='Departments Name' />
+                    <input type="text" required onChange={(e) => setDepartmentName(e.target.value)} placeholder='Name' />
                 </div>
             </div>
             <div className="card-flex">
                 <div className="card-row">
                 <label>Centre Location</label>
-                    <input type="text" className='department-input' onChange={(e) => setDepartmentHead(e.target.value)} required placeholder='Departments Head' />
+                    <input type="text" className='department-input' onChange={(e) => setDepartmentHead(e.target.value)} required placeholder='ex: colombo' />
                 </div>
             </div>
             <div className="card-flex">
                 <div className="card-row">
                 <label>Centre E-Mail</label>
-                    <input type="text" className='department-input' onChange={(e) => setDepartmentEmail(e.target.value)} required placeholder='Departments Head' />
+                    <input type="text" className='department-input' onChange={(e) => setDepartmentEmail(e.target.value)} required placeholder='example@gmail.com' />
                 </div>
             </div>
             <div className="card-flex">
                 <div className="card-row">
                 <label>Centre HotLine</label>
-                    <input type="text" className='department-input' onChange={(e) => setDepartmentPhone(e.target.value)} required placeholder='Departments Head' />
+                    <input type="text" className='department-input' onChange={(e) => setDepartmentPhone(e.target.value)} required placeholder='format: +94714552555' />
                 </div>
             </div>
             <div className="card-flex">
                 <div className="card-row">
+                <label>Total Employee</label>
                     <input type="number" className='department-input' onChange={(e) => setTotalEmployee(e.target.value)} placeholder='Total Employee' min={0} defaultValue={0} required />
                 </div>
             </div>

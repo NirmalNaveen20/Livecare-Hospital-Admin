@@ -2,7 +2,7 @@ import axios from 'axios';
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { FaCalendar, FaHotel, FaIdCard, FaUserAlt } from 'react-icons/fa';
+import { FaAmbulance, FaCalendar, FaHotel, FaIdCard, FaUserAlt } from 'react-icons/fa';
 import Projects from '../components/Projects';
 import RevenueChart from '../components/RevenueChart';
 import SalaryChart from '../components/SalaryChart';
@@ -73,8 +73,8 @@ const Dashboard = () => {
           <div className="d-group">
             <div className="d-badge">{accountsNumber?.count}</div>
             <div className="d-content">
-              <FaIdCard />
-              <span className='d-subtitle'>Accounts</span>
+              <FaAmbulance />
+              <span className='d-subtitle'>Ambulance</span>
             </div>
           </div>
         </div>

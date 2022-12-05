@@ -48,7 +48,9 @@ const Users = () => {
       "USER ID",
       { name: "NAME", options: { filterOptions: { fullWidth: true } } },
       "CREATED DATE",
-      "ROLE",
+      "EMAIL",
+      "USER NAME",
+      "PASSWORD",
       "ROLE TYPE"
   ];
 
@@ -90,7 +92,7 @@ const Users = () => {
                   title={"LIVECARE SYSTEM USERS"}
                   data={
                     users.map((user) => (
-                      [user.userId,user.firstName + ' ' + user.lastName, user.createdAt?.slice(0, 10), user.role, user.roleType]
+                      [user.userId,user.firstName + ' ' + user.lastName, user.createdAt?.slice(0, 10),user.email,user.role, user.password, user.roleType]
                     ))
                   }
                   columns={columns}

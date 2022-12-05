@@ -12,13 +12,13 @@ export const options = {
       },
       title: {
         display: true,
-        text: 'Revenue',
+        text: 'Inventory Management',
       },
     },
   };
 
 export const data = {
-  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+  labels: ['Staff', 'Patients', 'Ambulances', 'Doctors', 'Departments', 'Products'],
   datasets: [
     {
       label: '# of Votes',

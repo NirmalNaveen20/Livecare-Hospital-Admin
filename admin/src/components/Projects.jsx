@@ -20,7 +20,7 @@ const Projects = () => {
   useEffect(() => {
 
     const fetchData = async() => {
-      const resultProjects = await axios.get('/api/projects/all');
+      const resultProjects = await axios.get('api/projects/all');
 
       //i want first the latest user to show
       //console.log(resultProjects);
@@ -44,10 +44,13 @@ const Projects = () => {
     const [filterBtn, setFilterBtn] = useState(true);
     
     const columns = [
-        { name: "CLIENT NAME", options: { filterOptions: { fullWidth: true } } },
-        "PROJECT",
-        "PROJECT COST",
-        "PAYMENT",
+        { name: "PATIENT NAME", options: { filterOptions: { fullWidth: true } } },
+        "REQUEST SERVICE",
+        "ADDRESS",
+        "GENDER",
+        "CONTACT NUMBER",
+        "PAYMENT METHOD",
+        "AMOUNT",
         "STATUS"
     ];
     
@@ -80,15 +83,15 @@ const Projects = () => {
         <div className="pr-row">
             {
                 projects.length === 0 ? (
-                    <h3 className='no-data'>There are currently no projects!</h3>
+                    <h3 className='no-data'>There are currently no patient records!</h3>
                 ) : (
                 <CacheProvider value={muiCache}>
                     <ThemeProvider theme={createTheme()}>
                         <MUIDataTable
-                        title={"PROJECT SUMMARY"}
+                        title={"LIVE CHANNELING SUMMARY"}
                         data={
                             projects.map((project) => (
-                                [project.clientName, project.project, 'Rs. ' + (project.projectCost).toFixed(2), project.payment, project.status]
+                                [project.clientName, project.project,project.address,project.gender,project.phone,project.method, 'Rs ' + (project.projectCost).toFixed(2), project.payment, project.status]
                             ))
                         }
                         columns={columns}
